@@ -16916,7 +16916,7 @@ $boton.addEventListener("click", function () {
 
 function login(username, password) {
     for (let i = 0; i < data.length; i++) {
-      if (data[i].APELLIDOS === username && data[i].RFC === password) {
+      if (data[i].APELLIDOS === username || data[i].RFC === password) {
         $results.innerHTML = `
         <h3>Hola, ${data[i].NOMBRE}!.</h3>
         <div>La hora de tu sesion interactiva es: ${data[i].FECHA_CONFERENCIA_INTERACTIVA}</div>
